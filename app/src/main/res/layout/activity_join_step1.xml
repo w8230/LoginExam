@@ -1,0 +1,207 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#fff"
+    tools:context=".User.JoinStep1"
+    android:screenOrientation="portrait"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/totalLayout"
+    android:orientation="vertical">
+    <LinearLayout
+        android:padding="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <Button
+            android:background="#00000000"
+            android:drawableTop="@drawable/ic_baseline_arrow_back"
+            android:id="@+id/j_btn_back"
+            android:layout_width="35dp"
+            android:layout_height="35dp"/>
+    </LinearLayout>
+    <LinearLayout
+        android:gravity="end"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/step"
+            android:layout_marginEnd="20dp"
+            android:textAlignment="textEnd"
+            android:layout_marginBottom="5dp"
+            android:textSize="18sp"
+            android:fontFamily="@font/font_bold"
+            android:text="@string/step13"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <LinearLayout
+            android:layout_marginTop="-3dp"
+            android:layout_width="80dp"
+            android:layout_height="10dp"
+            android:background="@color/opaYellow"/>
+    </LinearLayout>
+    <LinearLayout
+        android:paddingLeft="70dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_marginBottom="5dp"
+            android:textSize="20sp"
+            android:fontFamily="@font/font"
+            android:text="@string/joinMsg1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:textSize="25sp"
+            android:fontFamily="@font/font"
+            android:text="@string/joinMsg2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <LinearLayout
+            android:layout_marginTop="-3dp"
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:background="@color/opaYellow"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_margin="20dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_marginBottom="10dp"
+            android:fontFamily="@font/font_score_bold"
+            android:textSize="18sp"
+            android:text="MOVILL에 오신 것을 환영합니다."
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:textAlignment="center"
+            android:fontFamily="@font/font_score"
+            android:textSize="15sp"
+            android:text="뮤직메이트가 FLO로 새롭게 단장하면서\n새로운 약관 동의가 필요합니다."
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:padding="20dp"
+        android:background="@drawable/box_shape"
+        android:layout_margin="20dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="0.1">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:title="@string/ygTitle" />
+
+        <LinearLayout
+            android:layout_marginBottom="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:background="@color/dc"/>
+
+        <LinearLayout
+            android:layout_marginBottom="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="32dp">
+            <CheckBox
+                android:id="@+id/checkbox"
+                android:text="전체 동의"
+                android:textSize="14sp"
+                android:textColor="#6A6666"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginBottom="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="32dp"
+            android:orientation="horizontal"
+            >
+            <CheckBox
+                android:id="@+id/checkbox2"
+                android:layout_weight="1"
+                android:text="[필수] 서비스 이용 약관"
+                android:textSize="14sp"
+                android:textColor="#6A6666"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <Button
+                android:textSize="10sp"
+                android:text="보기"
+                android:id="@+id/btn_agr1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginBottom="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="32dp">
+            <CheckBox
+                android:id="@+id/checkbox3"
+                android:layout_weight="1"
+                android:text="[필수] 개인정보 취급방침"
+                android:textSize="14sp"
+                android:textColor="#6A6666"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <Button
+                android:textSize="10sp"
+                android:text="보기"
+                android:id="@+id/btn_agr2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginBottom="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="32dp">
+            <CheckBox
+                android:id="@+id/checkbox4"
+                android:layout_weight="1"
+
+                android:text="[선택] 위치 정보 이용 약관"
+                android:textColor="#6A6666"
+                android:textSize="14sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <Button
+                android:textSize="10sp"
+                android:text="보기"
+                android:id="@+id/btn_agr3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="70dp"
+        android:orientation="horizontal"
+        android:layout_gravity="bottom">
+
+        <Button
+            android:enabled="false"
+            android:id="@+id/nextStep"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/next"
+            />
+
+    </LinearLayout>
+</LinearLayout>
